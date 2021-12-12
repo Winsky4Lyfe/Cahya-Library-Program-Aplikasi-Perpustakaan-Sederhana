@@ -5,19 +5,25 @@
 
 void login()
 {
+    printf("\n------------------------------------------------");
     printf("\nMasukan Username : ");
     scanf("%s",&user);
     printf("Masukan Password : ");
     scanf("%s",&pass);
+    printf("------------------------------------------------\n");
 
     if(strcmp(user, "admin") == 0 && strcmp(pass, "admin") == 0)
     {
-        printf("\nAkses diterima. Selamat Datang.\n");
+        printf("\n------------------------------------------------");
+        printf("\nAkses diterima. Selamat Datang.");
+        printf("\n------------------------------------------------\n");
         system("pause");
     }
     else
     {
-        printf("\nUsername dan Password yang anda masukkan salah.\n");
+        printf("\n------------------------------------------------");
+        printf("\nUsername atau Password yang anda masukkan salah.");
+        printf("\n------------------------------------------------\n");
         system("pause");
         exit(1);
     }
